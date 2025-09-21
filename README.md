@@ -1,6 +1,6 @@
 # Sitio Web Oficial de Grupo Legal Barboza
 
-![Banner del Sitio](https://via.placeholder.com/1200x630.png?text=Sitio+Web+de+Grupo+Legal+Barboza) <!-- Reemplaza esto con una captura de pantalla de la sección Hero -->
+![Banner del Sitio](https://prnt.sc/jUHcJMG09FV_) <!-- Reemplaza esto con una captura de pantalla de la sección Hero -->
 
 Landing page moderna y profesional para el despacho de abogados Grupo Legal Barboza, especializado en derecho migratorio y servicios legales para **España 🇪🇸, EE. UU. 🇺🇸 y Colombia 🇨🇴**.
 
