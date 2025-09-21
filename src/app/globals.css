@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+        --brand-dark: #192A3E;
+        --brand-accent: #C09568;
+        --text-primary: #1F2937;
+        --text-secondary: #6B7286;
+        --border: #E5E7EB;
+}
+
+@theme inline {
+  --brand-dark: '#192A3E';
+  --brand-accent: '#C09568';
+  --text-primary: '#1F2937';
+  --text-secondary: '#6B7286';
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--brand-dark);
+  color: var(--text-primary);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}

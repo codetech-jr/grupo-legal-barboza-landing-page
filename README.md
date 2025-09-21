@@ -1,37 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sitio Web Oficial de Grupo Legal Barboza
 
-## Getting Started
+![Banner del Sitio](https://via.placeholder.com/1200x630.png?text=Sitio+Web+de+Grupo+Legal+Barboza) <!-- Reemplaza esto con una captura de pantalla de la sección Hero -->
 
-First, run the development server:
+Landing page moderna y profesional para el despacho de abogados Grupo Legal Barboza, especializado en derecho migratorio y servicios legales para **España 🇪🇸, EE. UU. 🇺🇸 y Colombia 🇨🇴**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**➡️ Enlace al sitio en producción:** [www.grupolegalbarboza.com](https'://www.grupolegalbarboza.com) <!-- Reemplaza esto con tu dominio real cuando lo tengas -->
+
+---
+
+## ✨ Características Principales
+
+-   **Diseño Totalmente Adaptable (Responsive):** Experiencia de usuario perfecta en móviles, tabletas y ordenadores de escritorio.
+-   **Animaciones Profesionales:** Todas las secciones cuentan con animaciones de entrada fluidas y elegantes al hacer scroll, implementadas con **Framer Motion**.
+-   **Componentes Interactivos:**
+    -   Sliders dinámicos para el Hero y los Testimonios (`Embla Carousel`).
+    -   Contadores animados para métricas de éxito (`React CountUp`).
+    -   Banderas SVG de alta calidad para una identidad visual consistente (`React Country Flag`).
+-   **Optimización para SEO:** Construido con **Next.js (App Router)** para un renderizado del lado del servidor (SSR) que garantiza una excelente indexación en buscadores.
+-   **Experiencia de Usuario (UX):**
+    -   Banner de consentimiento de cookies funcional que guarda la preferencia del usuario.
+    -   Llamada a la acción (CTA) directa a WhatsApp para una conversión inmediata.
+    -   Páginas legales dedicadas (`/terminos-servicio`, `/politica-privacidad`, etc.).
+
+---
+
+## 🎨 Stack Tecnológico
+
+Este proyecto fue construido utilizando un stack tecnológico moderno y escalable:
+
+-   **Framework:** [Next.js](https://nextjs.org/) (App Router)
+-   **Lenguaje:** [TypeScript](https://www.typescriptlang.org/)
+-   **Librería de UI:** [React](https://react.dev/)
+-   **Estilizado:** [Tailwind CSS](https://tailwindcss.com/)
+-   **Animaciones:** [Framer Motion](https://www.framer.com/motion/)
+-   **Plugins Adicionales:**
+    -   `react-icons` para iconografía.
+    -   `react-country-flag` para las banderas.
+    -   `embla-carousel-react` para los sliders.
+    -   `react-countup` y `react-intersection-observer` para animaciones al hacer scroll.
+-   **Despliegue:** [Vercel](https://vercel.com/)
+
+---
+
+## 🚀 Cómo Empezar (Desarrollo Local)
+
+Sigue estos pasos para levantar una copia del proyecto en tu máquina local.
+
+### Prerrequisitos
+
+-   Node.js (versión 18.x o superior)
+-   npm o yarn
+
+### Instalación
+
+1.  **Clona el repositorio:**
+    ```bash
+    git clone https://github.com/tu-usuario/grupo-legal-barboza-web.git
+    ```
+
+2.  **Navega a la carpeta del proyecto:**
+    ```bash
+    cd grupo-legal-barboza-web
+    ```
+
+3.  **Instala las dependencias:**
+    ```bash
+    npm install
+    ```
+
+4.  **Ejecuta el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
+
+5.  Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado.
+
+---
+
+## 🛠️ Scripts Disponibles
+
+En el directorio del proyecto, puedes ejecutar:
+
+-   `npm run dev`: Inicia la aplicación en modo de desarrollo.
+-   `npm run build`: Compila la aplicación para producción.
+-   `npm run start`: Inicia un servidor de producción.
+-   `npm run lint`: Ejecuta el linter para revisar la calidad del código.
+
+---
+
+## 📂 Estructura del Proyecto
+
+La estructura de los componentes está organizada para ser intuitiva y escalable:
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# grupo-legal-barboza-landing-page
+src/
+├── app/                  # Rutas y páginas principales
+├── components/
+│   ├── layout/           # Componentes reutilizables (Header, Footer, etc.)
+│   └── sections/         # Componentes de cada sección de la landing page
+└── ...
+```
