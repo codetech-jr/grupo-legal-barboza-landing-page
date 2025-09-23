@@ -7,7 +7,7 @@ import { motion, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 // 1. Importa el SVG como un componente de React. La ruta debe ser relativa a la raíz del proyecto.
-import AbaLogo from '../../../public/images/logo-aba.svg'; 
+import AbaLogo from '../../../public/images/aba-logo.svg';
 
 // 2. Estructura de datos flexible para manejar PNGs y SVGs
 const logosData = [
