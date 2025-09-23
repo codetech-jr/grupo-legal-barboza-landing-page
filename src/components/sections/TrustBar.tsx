@@ -77,6 +77,7 @@ const TrustBar = () => {
                   src={logo.src}
                   alt={logo.name}
                   className="w-40 h-auto object-contain"
+                  unoptimized // <-- AÑADE ESTA LÍNEA
                 />
               ) : (
                 <div className="w-40 h-16 bg-gray-100 rounded-lg border border-dashed border-gray-300 flex items-center justify-center">
