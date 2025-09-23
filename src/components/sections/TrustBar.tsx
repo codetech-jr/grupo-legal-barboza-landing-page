@@ -6,29 +6,30 @@ import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-// 1. Importa el SVG como un componente de React. La ruta debe ser relativa a la raíz del proyecto.
-import AbaLogo from '/images/aba-logo.svg';
+// 1. Cambiamos la importación: ahora apunta a nuestro nuevo componente de React.
+import AbaLogo from '../icons/AbaLogo'; // Ajusta la ruta si es necesario (ej: '@/components/icons/AbaLogo')
 
-// 2. Estructura de datos flexible para manejar PNGs y SVGs
+// 2. Ajustamos el array de datos para que sea consistente con la nueva importación.
+//    La estructura que tenías era casi perfecta, solo necesitaba la importación correcta.
 const logosData = [
   {
     name: 'American Immigration Lawyers Association',
-    src: '/images/aila-logo.png', // Este es un PNG
+    src: '/images/aila-logo.png',
     Component: null,
   },
   {
     name: 'Ilustre Colegio de Abogados de Madrid',
-    src: '/images/icam-logo.png', // Este es un PNG
+    src: '/images/icam-logo.png',
     Component: null,
   },
   {
     name: 'Colegio de Abogados de USA (American Bar Association)',
-    src: null, // No usamos 'src' para el SVG
-    Component: AbaLogo, // Usamos la propiedad 'Component' para el SVG
+    src: null, // Ya no necesitamos 'src' para el componente SVG
+    Component: AbaLogo, // Asignamos el componente importado
   },
   {
     name: 'Consejo Superior de la Judicatura de Colombia',
-    src: '/images/rama-judicial-logo.png', // Este es un PNG
+    src: '/images/csj-logo.png',
     Component: null,
   },
 ];
@@ -72,12 +73,10 @@ const TrustBar = () => {
               className="flex justify-center col-span-1"
               title={logo.name}
             >
-              {/* 3. Lógica de renderizado condicional */}
+              {/* 3. Tu lógica de renderizado condicional se mantiene, ¡ahora funcionará! */}
               {logo.Component ? (
-                // Si es un componente (nuestro SVG), lo renderizamos.
                 <logo.Component className="h-16 w-auto text-gray-600" />
               ) : logo.src ? (
-                // Si es un PNG/JPG, usamos <Image>.
                 <Image 
                   width={160}
                   height={64}
@@ -86,7 +85,6 @@ const TrustBar = () => {
                   className="w-40 h-auto object-contain"
                 />
               ) : (
-                // Si no hay nada, mostramos el placeholder.
                 <div className="w-40 h-16 bg-gray-100 rounded-lg border border-dashed border-gray-300" />
               )}
             </motion.div>
