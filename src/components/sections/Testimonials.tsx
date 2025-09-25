@@ -77,7 +77,7 @@ const Testimonials = () => {
   }, [emblaApi]);
 
   return (
-    <section ref={inViewRef} className="bg-brand-dark py-20 sm:py-24 overflow-hidden">
+    <section ref={inViewRef} className="bg-brand-dark py-20 sm:py-24 overflow-hidden" id="testimonials">
       <motion.div
         variants={containerVariants}
         initial="hidden"

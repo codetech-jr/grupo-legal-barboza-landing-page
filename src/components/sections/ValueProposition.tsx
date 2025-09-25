@@ -9,7 +9,7 @@ import { useInView } from 'react-intersection-observer';
 import { motion, Variants } from 'framer-motion';
 
 const benefits = [
-  { icon: <GlobeEuropeAfricaIcon className="w-8 h-8 text-[#C09568]" />, title: 'Experiencia Transfronteriza', description: 'Profundo conocimiento de los matices legales en EE. UU., España y Colombia, con más de 15 años de experiencia combinada.'},
+  { icon: <GlobeEuropeAfricaIcon className="w-8 h-8 text-[#C09568]" />, title: 'Experiencia Transfronteriza', description: 'Profundo conocimiento de los matices legales en EE. UU., España y Colombia, con más de 10 años de experiencia combinada.'},
   { icon: <LinkIcon className="w-8 h-8 text-[#C09568]" />, title: 'Estrategia Unificada', description: 'Un único punto de contacto para tu viaje legal internacional, coordinando todos los aspectos de tu caso de forma eficiente.'},
   { icon: <UsersIcon className="w-8 h-8 text-[#C09568]" />, title: 'Equipo Global', description: 'Acceso a expertos legales dedicados en cada país, con conocimiento específico de las regulaciones locales.'},
 ];

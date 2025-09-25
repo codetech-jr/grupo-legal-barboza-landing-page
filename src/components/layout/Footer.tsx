@@ -14,12 +14,12 @@ const quickLinks = [
   { href: '#servicios', label: 'Servicios' },
   { href: '#por-que-elegirnos', label: 'Sobre Nosotros' },
   { href: '#proceso', label: 'Nuestro Proceso' },
-  { href: '#testimonios', label: 'Testimonios' },
+  { href: '#testimonials', label: 'Testimonios' },
 ];
 
 const supportLinks = [
   { href: '#contacto', label: 'Contacto' },
-  { href: '/faqs', label: 'Preguntas Frecuentes' },
+  { href: '#faqs', label: 'Preguntas Frecuentes' },
   { href: '/politica-privacidad', label: 'Política de Privacidad' },
   { href: '/terminos-servicio', label: 'Términos de Servicio' },
 ];
