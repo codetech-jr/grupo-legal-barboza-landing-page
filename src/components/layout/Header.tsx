@@ -58,10 +58,10 @@ const Header = () => {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: 'easeInOut' }}
-        className={`fixed top-0 z-50 w-full transition-all duration-300 ${
+        className={`fixed top-0 z-100 w-full transition-all duration-300 ${
           scrolled || isMenuOpen // Hacemos el header sólido también si el menú está abierto
-            ? 'bg-brand-dark shadow-md'
-            : 'bg-brand-dark/80 backdrop-blur-sm'
+            ? 'bg-[#192A3E] shadow-md'
+            : 'bg-[#192A3E]/80 backdrop-blur-sm'
         }`}
       >
         <div className="container mx-auto flex items-center justify-between p-4">
