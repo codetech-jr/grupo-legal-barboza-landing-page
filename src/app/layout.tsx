@@ -19,9 +19,12 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://grupolegalbarboza.com'),
+  metadataBase: new URL('https://www.grupolegalbarboza.com'),
+  alternates: {
+    canonical: 'https://www.grupolegalbarboza.com/',
+  },
   title: "Deylena Barboza | Asegurando tu Futuro en 🇪🇸, 🇺🇸 y 🇨🇴",
-  description: "Especialistas en visas, residencias y ciudadanía. Hacemos tu proceso migratorio claro, seguro y exitoso en España, Estados Unidos y Colombia.",
+  description: "Especialistas en visas, residencias y ciudadanía...",
   verification: {
     google: "BsnNUQXmHO1--4TU4t9s8Yxunwcw8pjTieG1k_DyI24",
   },
